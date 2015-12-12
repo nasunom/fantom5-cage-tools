@@ -1,7 +1,7 @@
 FROM python:2.7
 MAINTAINER nasuno@ascade.co.jp
 
-# RUN apt-get update && apt-get -y install make gcc
+RUN apt-get update && apt-get -y install libcurl4-nss-dev
 
 ADD http://fantom.gsc.riken.jp/5/suppl/rRNAdust/rRNAdust1.02.tgz rRNAdust1.02.tgz
 RUN tar zxf rRNAdust1.02.tgz
